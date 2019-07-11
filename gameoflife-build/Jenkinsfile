@@ -1,0 +1,8 @@
+node{
+stage ('SCM checkout'){
+git 'https://github.com/wakaleo/game-of-life/new/master/gameoflife-build'
+}
+stage('compile package')
+{
+sh  'mvn package'
+}}
